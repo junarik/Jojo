@@ -7,375 +7,377 @@
     <title>Calendar</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex justify-center p-3">
-    <div class="main container w-[20rem]">
-        <div class="calendar p-3 ">
-            <header class="flex flex-row justify-between box-border mb-1">
-                <div>
-                    <span class="text-sm font-semibold">2021
-                         Пт, 
-                         Березень 
-                         20</span> 
-                    
-                </div>
-                <div>
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="w-6 h-6">
-                        <path fill="#1565C0" d="M14,14H7V16H14M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M17,10H7V12H17V10Z" />
-                    </svg>   
-                </div>
-            </header>
-            <div class="grid pt-1.5 pb-6 pl-3 pr-3 shadow-[0_2px_20px_0px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-lg">
-                <div class="flex flex-row justify-between mt-0.5">
-                    <div class="basis-1/6 flex justify-left items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 fill-[#1565C0] hover:bg-gray-200 rounded-full hover:cursor-pointer">
-                            <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
-                        </svg>
+<body >
+    <div class="flex justify-center p-3">
+        <div class="w-[20rem]">
+            <div class="calendar p-3">
+                <header class="flex flex-row justify-between box-border mb-1">
+                    <div>
+                        <span class="text-sm font-semibold">2021
+                             Пт, 
+                             Березень 
+                             20</span> 
                     </div>
-                    <div class="basis-1/2 flex justify-center items-center"><p class="hover:cursor-pointer hover:underline underline-offset-2 mb-1 font-normal text-[#1565C0] text-sm font-semibold">березень</p>
+                    <div>
+                        <svg viewBox="0 0 24 24" class="w-6 h-6">
+                            <path fill="#1565C0" d="M14,14H7V16H14M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M17,10H7V12H17V10Z" />
+                        </svg>   
                     </div>
-                    <div class="basis-1/6 flex justify-end items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 fill-[#1565C0] hover:bg-gray-200 hover:cursor-pointer rounded-full">
-                            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-                          </svg>                            
-                    </div>
-                </div>
-                <table class="text-xs border-separate border-spacing-0.5">
-                    <thead>
-                        <tr>
-                            <th class="font-medium p-1">Нд</th>
-                            <th class="font-medium p-1">Пн</th>
-                            <th class="font-medium p-1">Вт</th>
-                            <th class="font-medium p-1">Ср</th>
-                            <th class="font-medium p-1">Чт</th>
-                            <th class="font-medium p-1">Пт</th>
-                            <th class="font-medium p-1">Сб</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">1</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default"></span>2</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default"></span>3</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">4</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">5</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">6</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">7</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">8</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default"></span>9</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">10</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">11</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">12</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">13</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">14</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-normal p-1">
-                                <div class="flex items-center justify-center ">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">15</span></div>
-                                    <div class="relative p-[3px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default"></span>16</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center ">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">17</span></div>
-                                    <div class="relative p-[3px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">18</span></div>
-                                    <div class="relative p-[3px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">19</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full bg-[#5CAD5A] flex items-center justify-center"><span class="cursor-default">20</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">21</span></div>
-                                    <div class="relative p-[2.9px] bg-red-500 rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">22</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default"></span>23</span></div>
-                                    <div class="relative p-[2.9px] bg-yellow-500 rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">24</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">25</span></div>
-                                    <div class="relative p-[2.9px] bg-[#8EFCEF] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">26</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">27</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">28</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">29</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default"></span>30</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 flex items-center justify-center"><span class="cursor-default">31</span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full  flex items-center justify-center"><span></span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full  flex items-center justify-center"><span></span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class="flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full  flex items-center justify-center"><span></span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                            <td class="font-normal p-1">
-                                <div class=" flex items-center justify-center">
-                                    <div class="w-full h-full aspect-square rounded-full flex items-center justify-center"><span></span></div>
-                                    <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="mt-3">
-                    <div class="border-y-[1.6px] border-[#1565C0] hover:bg-gray-50 hover:cursor-pointer">
-                        <div class="flex justify-between items-center ml-1.5 mr-1.5 mt-0.5 mb-0.5">
-                            <span class="font-normal text-[#5F5F5F]">Власна мітка 1</span>
-                            <div class="bg-[#FC8E8E] w-2 h-2 rounded-full"></div>
+                </header>
+                <div class="grid pt-1.5 pb-6 pl-3 pr-3 shadow-[0_2px_20px_0px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-lg">
+                    <div class="flex flex-row justify-between mt-0.5">
+                        <div class="basis-1/6 flex justify-left items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 fill-[#1565C0]  rounded-full hover:cursor-pointer">
+                                <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="basis-1/2 flex justify-center items-center"><p class="hover:cursor-pointer hover:underline underline-offset-2 mb-1 font-normal text-[#1565C0] text-sm font-semibold">березень</p>
+                        </div>
+                        <div class="basis-1/6 flex justify-end items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 fill-[#1565C0]  hover:cursor-pointer rounded-full">
+                                <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                              </svg>                            
                         </div>
                     </div>
-                    <div class="border-b-[1.6px] border-[#1565C0] hover:bg-gray-50 hover:cursor-pointer">
-                        <div class="flex justify-between items-center ml-1.5 mr-1.5 mt-0.5 mb-0.5">
-                            <span class="font-normal text-[#5F5F5F]">Власна мітка 2</span>
-                            <div class="bg-[#FCD08E] w-2 h-2 rounded-full"></div>
+                    <table class="text-xs border-separate border-spacing-0.5">
+                        <thead>
+                            <tr>
+                                <th class="font-medium p-1">Нд</th>
+                                <th class="font-medium p-1">Пн</th>
+                                <th class="font-medium p-1">Вт</th>
+                                <th class="font-medium p-1">Ср</th>
+                                <th class="font-medium p-1">Чт</th>
+                                <th class="font-medium p-1">Пт</th>
+                                <th class="font-medium p-1">Сб</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">1</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">2</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">3</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">4</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">5</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">6</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">7</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">8</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">9</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">10</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">11</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">12</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">13</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">14</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-normal p-1">
+                                    <div class="flex items-center justify-center ">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">15</div>
+                                        <div class="relative p-[3px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">16</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center ">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">17</div>
+                                        <div class="relative p-[3px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">18</div>
+                                        <div class="relative p-[3px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">19</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer bg-[#5CAD5A] flex items-center justify-center">20</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">21</div>
+                                        <div class="relative p-[2.9px] bg-red-500 rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">22</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">23</div>
+                                        <div class="relative p-[2.9px] bg-yellow-500 rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">24</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">25</div>
+                                        <div class="relative p-[2.9px] bg-[#8EFCEF] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">26</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">27</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">28</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">29</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">30</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full hover:bg-gray-200 hover:cursor-pointer flex items-center justify-center">31</div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full  flex items-center justify-center"></div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full  flex items-center justify-center"></div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class="flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full  flex items-center justify-center"></div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                                <td class="font-normal p-1">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="w-full h-full aspect-square rounded-full flex items-center justify-center"></div>
+                                        <div class="relative p-[2.9px] rounded-full top-[7.5px] right-[8px]"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="mt-3">
+                        <div class="border-y-[1.6px] border-[#1565C0] hover:bg-gray-50 hover:cursor-pointer">
+                            <div class="flex justify-between items-center ml-1.5 mr-1.5 mt-0.5 mb-0.5">
+                                <span class="font-normal text-[#5F5F5F]">Власна мітка 1</span>
+                                <div class="bg-[#FC8E8E] w-2 h-2 rounded-full"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-b-[1.6px] border-[#1565C0] hover:bg-gray-50 hover:cursor-pointer">
-                        <div class="flex justify-between items-center ml-1.5 mr-1.5 mt-0.5 mb-0.5">
-                            <span class="font-normal text-[#5F5F5F]">Власна мітка 3</span>
-                            <div class="bg-[#8EFCEF] w-2 h-2 rounded-full"></div>
+                        <div class="border-b-[1.6px] border-[#1565C0] hover:bg-gray-50 hover:cursor-pointer">
+                            <div class="flex justify-between items-center ml-1.5 mr-1.5 mt-0.5 mb-0.5">
+                                <span class="font-normal text-[#5F5F5F]">Власна мітка 2</span>
+                                <div class="bg-[#FCD08E] w-2 h-2 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="border-b-[1.6px] border-[#1565C0] hover:bg-gray-50 hover:cursor-pointer">
+                            <div class="flex justify-between items-center ml-1.5 mr-1.5 mt-0.5 mb-0.5">
+                                <span class="font-normal text-[#5F5F5F]">Власна мітка 3</span>
+                                <div class="bg-[#8EFCEF] w-2 h-2 rounded-full"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="Events p-3">
-            <div class="flex flex-row justify-between pb-1">
-                <span class="font-bold text-2xl">Події</span>
-                <span class="font-semibold text-gray-500 hover:cursor-pointer">показати усі</span>
-            </div>
-            <div class="grid gap-4 grid-cols-1">
-                <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#FC8E8E] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
-                    <div class="bg-[#FC8E8E] rounded-tl-lg rounded-bl-lg w-2"></div>
-                    <div class="flex flex-row grow justify-between">
-                        <div class="flex flex-col justify-center ml-2">
-                            <span class="text-[18px] font-semibold">Назва події 1</span>
-                            <span class="text-[14px] font-normal">Короткий опис події</span>
-                        </div>
-                        <div class="flex flex-col mr-[12px] mt-3">
-                            <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                            </div>
-                            <div class="grow flex items-end text-blue-500 mb-[6px]">10:40</div>
-                        </div>   
-                    </div>
+            <div class="Events p-3">
+                <div class="flex flex-row justify-between pb-1">
+                    <span class="font-bold text-2xl">Події</span>
+                    <span class="font-semibold text-gray-500 hover:cursor-pointer">показати усі</span>
                 </div>
-        
-                <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#FCD08E] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
-                    <div class="bg-[#FCD08E] rounded-tl-lg rounded-bl-lg w-2"></div>
-                    <div class="flex flex-row grow justify-between">
-                        <div class="flex flex-col justify-center ml-2">
-                            <span class="text-[18px] font-semibold">Назва події 2</span>
-                            <span class="text-[14px] font-normal">Короткий опис події</span>
-                        </div>
-                        <div class="flex flex-col mr-[12px] mt-3 space-y-[25px]">
-                            <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                <div class="grid gap-4 grid-cols-1">
+                    <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#FC8E8E] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
+                        <div class="bg-[#FC8E8E] rounded-tl-lg rounded-bl-lg w-2"></div>
+                        <div class="flex flex-row grow justify-between">
+                            <div class="flex flex-col justify-center ml-2">
+                                <span class="text-[18px] font-semibold">Назва події 1</span>
+                                <span class="text-[14px] font-normal">Короткий опис події</span>
                             </div>
-                            <span class="text-blue-500">13:40</span>
-                        </div>   
+                            <div class="flex flex-col mr-[12px] mt-3">
+                                <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                </div>
+                                <div class="grow flex items-end text-blue-500 mb-[6px]">10:40</div>
+                            </div>   
+                        </div>
                     </div>
-                </div>
-        
-                <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#AAFC8E] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
-                    <div class="bg-[#AAFC8E] rounded-tl-lg rounded-bl-lg w-2"></div>
-                    <div class="flex flex-row grow justify-between">
-                        <div class="flex flex-col justify-center ml-2">
-                            <span class="text-[18px] font-semibold">Назва події 3</span>
-                            <span class="text-[14px] font-normal">Короткий опис події</span>
-                        </div>
-                        <div class="flex flex-col mr-[12px] mt-3 space-y-[25px]">
-                            <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+            
+                    <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#FCD08E] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
+                        <div class="bg-[#FCD08E] rounded-tl-lg rounded-bl-lg w-2"></div>
+                        <div class="flex flex-row grow justify-between">
+                            <div class="flex flex-col justify-center ml-2">
+                                <span class="text-[18px] font-semibold">Назва події 2</span>
+                                <span class="text-[14px] font-normal">Короткий опис події</span>
                             </div>
-                            <span class="text-blue-500">17:40</span>
-                        </div>   
+                            <div class="flex flex-col mr-[12px] mt-3 space-y-[25px]">
+                                <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                </div>
+                                <span class="text-blue-500">13:40</span>
+                            </div>   
+                        </div>
                     </div>
-                </div>
-        
-                <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#8EFCEF] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 hover: flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
-                    <div class="bg-[#8EFCEF] rounded-tl-lg rounded-bl-lg w-2"></div>
-                    <div class="flex flex-row grow justify-between">
-                        <div class="flex flex-col justify-center ml-2">
-                            <span class="text-[18px] font-semibold">Назва події 4</span>
-                            <span class="text-[14px] font-normal">Короткий опис події</span>
-                        </div>
-                        <div class="flex flex-col mr-[12px] mt-3 space-y-[25px]">
-                            <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
-                                <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+            
+                    <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#AAFC8E] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
+                        <div class="bg-[#AAFC8E] rounded-tl-lg rounded-bl-lg w-2"></div>
+                        <div class="flex flex-row grow justify-between">
+                            <div class="flex flex-col justify-center ml-2">
+                                <span class="text-[18px] font-semibold">Назва події 3</span>
+                                <span class="text-[14px] font-normal">Короткий опис події</span>
                             </div>
-                            <span class="text-blue-500">19:40</span>
-                        </div>   
+                            <div class="flex flex-col mr-[12px] mt-3 space-y-[25px]">
+                                <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                </div>
+                                <span class="text-blue-500">17:40</span>
+                            </div>   
+                        </div>
+                    </div>
+            
+                    <div class="transition-all duration-300 hover:scale-[1.07] hover:shadow-[#8EFCEF] hover:shadow-[0_1px_4px_0px_rgba(0,0,0,0.1)] hover:translate-y-1 hover: flex flex-row shadow-[0_4px_15px_0px_rgba(0,0,0,0.3)] rounded-lg h-[4.5rem]">
+                        <div class="bg-[#8EFCEF] rounded-tl-lg rounded-bl-lg w-2"></div>
+                        <div class="flex flex-row grow justify-between">
+                            <div class="flex flex-col justify-center ml-2">
+                                <span class="text-[18px] font-semibold">Назва події 4</span>
+                                <span class="text-[14px] font-normal">Короткий опис події</span>
+                            </div>
+                            <div class="flex flex-col mr-[12px] mt-3 space-y-[25px]">
+                                <div class="dotes flex justify-end space-x-[2px] hover:cursor-pointer">
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                    <div class="bg-gray-400 rounded-full h-[3.5px] w-[3.5px]"></div>
+                                </div>
+                                <span class="text-blue-500">19:40</span>
+                            </div>   
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     
 </body>
 </html>
